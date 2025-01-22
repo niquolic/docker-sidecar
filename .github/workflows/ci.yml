@@ -35,6 +35,6 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         context: .
-        file: ./Dockerfile
+        file: ./api-gateway/Dockerfile
         push: true
         tags: andrenextu/node-docker:latest
