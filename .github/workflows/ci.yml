@@ -34,7 +34,7 @@ jobs:
       id: push
       uses: docker/build-push-action@v3
       with:
-        context: .
+        context: ./api-gateway
         file: ./api-gateway/Dockerfile
         push: true
-        tags: andrenextu/node-docker:latest
+        tags: nicolasdebruycker/node-docker:latest
