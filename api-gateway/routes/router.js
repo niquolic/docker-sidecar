@@ -25,7 +25,7 @@ router.get('/', async (req, res) => {
     const services = await Service.find();
     res.json(services);
   } catch (error) {
-    res.status(500).json({ message: 'Erreur lors de la récupération des services : ', error: error.message });
+    res.status(500).json({ message: 'Erreur lors de la récupération des services: ', error: error.message });
   }
 });
 
