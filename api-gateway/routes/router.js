@@ -29,4 +29,8 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/test', async (req, res) => {
+    console.log('return')
+});
+
 module.exports = router;
